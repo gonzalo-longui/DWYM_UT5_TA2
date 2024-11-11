@@ -11,8 +11,15 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <TextInput onChangeText={(value) => setText(value)} value={text}></TextInput>
-      <Text>{text} </Text>
+      <TextInput style={{
+          height: 40,
+          borderColor: 'gray',
+          borderWidth: 1,
+          padding: 10,
+          width: '80%',
+          marginBottom: 10,
+        }} onChangeText={(value) => setText(value)} value={text}></TextInput>
+      <Text>{text}</Text>
     </View>
   );
 }
